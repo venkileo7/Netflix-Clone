@@ -1,0 +1,100 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 6%;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-dark {
+  background: #141414;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img {
+  height: 30px;
+  width: auto;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.nav-left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left ul li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-right img {
+  height: 20px;
+  margin-left: 15px;
+}
+
+.nav-right .profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-right .caret {
+  height: 15px;
+  margin-left: 8px;
+}
+
+.nav-right .profile-img {
+  height: 30px;
+  border-radius: 4px;
+}
+
+.nav-right span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.navbar .dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px 15px;
+  background: rgb(67, 67, 67);
+  border-radius: 5px;
+  width: max-content;
+  z-index: 1;
+  display: none;
+}
+
+.navbar .profile:hover .dropdown {
+  display: block;
+}
+
+.dropdown p:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1070px) {
+  .navbar {
+    padding: 20px 2%;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-left ul {
+    display: none;
+  }
+}

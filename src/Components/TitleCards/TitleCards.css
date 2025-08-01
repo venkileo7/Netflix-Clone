@@ -1,0 +1,54 @@
+.titlecards {
+  margin-bottom: 50px;
+}
+
+.titlecards h2 {
+  margin-bottom: 10px;
+}
+
+.card-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card-list img {
+  width: 230px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-list .card {
+  position: relative;
+  color: white;
+}
+
+.card-list .card p {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1050px) {
+  .card-list img {
+    width: 190px;
+  }
+  .titlecards h2 {
+    font-size: 17px;
+  }
+
+  .card-list .card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-list img {
+    width: 150px;
+  }
+}
